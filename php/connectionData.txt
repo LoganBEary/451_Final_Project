@@ -1,0 +1,10 @@
+<?php
+
+$server="ix.cs.uoregon.edu";
+$dbname="school_contacts";
+$user="guest";
+$pass="guest";
+$port="3405";
+
+//using guest login for my DB
+?>

@@ -1,0 +1,102 @@
+
+<html>
+<head>
+       <title>CIS 451 - Final Project</title>
+</head>
+<link href="./css/findContacts.css" rel="stylesheet">
+<body bgcolor="grey">
+<div class= 'heading'>
+	<h2> 
+		<u>CIS 451 - Final Project</u> 
+	</h2>
+	<h3>Connecting to School Contacts using MySQL/PHP</h3>
+</div>
+
+<hr>
+	<p>Print All Table Data </p>
+	<form action="./php/GetTables.php" method="POST">
+		<input type="submit" value="submit">
+	</form>
+
+</hr>
+
+<hr>
+	<p>
+		Get current College Security Club information and which school they belong to
+	<p>
+
+	<form action="./php/FindClubs.php" method="POST">
+		<input type="submit" value="submit">
+	</form>
+</hr>
+
+<hr>
+	<p>
+		Get a Teachers Email and Department. Please enter Teachers First & Last Name (Ex. Nick Crukk, Logan Set)
+	</p>
+	<form action="./php/FindTeacher.php" method="POST">
+
+		<input type="text" placeholder='First Name'name="first"> 
+		<input type="text" placeholder='Last Name' name="last"><br>
+		<input type="submit" value="submit">
+		<input type="reset" value="erase">
+	</form>
+</hr>	
+<hr>
+	<p>
+		Get Employee Information from Schools in a District (ex. Eugene School District, Lane County School District)
+	<p>
+
+	<form action="./php/FindDistEmp.php" method="POST">
+
+		<input placeholder="District Name" type="text" name="district"> <br>
+		<input type="submit" value="submit">
+		<input type="reset" value="erase">
+	</form>
+</hr>
+<hr>
+	<p>
+		Find all teachers in a department. Please enter Department(Math, Science, English) 
+	<p>
+
+	<form action="./php/FindDept.php" method="POST">
+ 
+		<input placeholder="Department Name" type="text" name="dept"> <br>
+		<input type="submit" value="submit">
+		<input type="reset" value="erase">
+	</form>
+</hr>
+<hr>
+	<p>
+		Find Employees who also have the same Degree. Please Enter a Degree(Ex. English, Chemistry, Law, Dance) 
+	<p>
+
+	<form action="./php/FindSameDegree.php" method="POST">
+
+		<input placeholder="Degree" type="text" name="degree"> <br>
+		<input type="submit" value="submit">
+		<input type="reset" value="erase">
+	</form>
+</hr>
+<hr>
+	<p>
+		Find Teachers who started before a certain date. Please enter a Date in YYYY-MM-DD Format
+	<p>
+
+	<form action="./php/FindStartDate.php" method="POST">
+
+		<input placeholder="Date" type="text" name="start_date"> <br>
+		<input type="submit" value="submit">
+		<input type="reset" value="erase">
+	</form>
+</hr>
+
+
+</body>
+<div id='footer'>
+<p>
+<a href="FindContacts.txt" >Contents</a>
+of this page.
+</p>
+</div>
+</html>
